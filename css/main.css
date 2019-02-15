@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body {
+  color: #4d4d4d;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  color: #4d4d4d;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+div.gallery {
+  margin: 6px;
+  display: inline-block;
+  width: 213px;
+  border-radius: 10px;
+  background: #4d4d4d;
+  position: relative;
+  padding: 20px;
+  color: #fff;
+}
+
+div.gallery:hover {
+  background: #494949;
+}
+
+img {
+  width: 100px;
+}
+
+div.desc {
+  padding: 0px 8px 8px 8px;
+  font-size: 1.3em;
+}
+
+.grid-1,
+.grid-2 {
+  display: block;
+}
+
+.grid-2 {
+  margin-top: 3px;
+}
+
+.grid-1 img,
+.grid-2 img {
+  margin: 5px;
+}
+
+/* Second Icon display:none */
+
+.dev-red,
+.res-red,
+.mar-red,
+.others-red {
+  display: none;
+}
+/* developer */
+.developer:hover > .dev-white {
+  display: none;
+}
+
+.developer:hover > .dev-red {
+  display: inline-block;
+}
+
+/* Reseller */
+.reseller:hover > .res-white {
+  display: none;
+}
+
+.reseller:hover > .res-red {
+  display: inline-block;
+}
+
+/* Marketer */
+.marketer:hover > .mar-white {
+  display: none;
+}
+
+.marketer:hover > .mar-red {
+  display: inline-block;
+}
+
+/* Others */
+.others:hover > .others-white {
+  display: none;
+}
+
+.others:hover > .others-red {
+  display: inline-block;
+}
+
+/* Media Query */
+@media only screen and (max-width: 320px) {
+  img {
+    width: 100px;
+    height: 80px;
+  }
+
+  div.gallery {
+    margin: 5px;
+    display: inline-block;
+    width: 155px;
+    border-radius: 10px;
+    background: #4d4d4d;
+  }
+}
+
+@media only screen and (max-width: 549px) {
+  img {
+    width: 100px;
+    height: 80px;
+  }
+
+  div.gallery {
+    margin: 5px;
+    display: inline-block;
+    width: 155px;
+    border-radius: 10px;
+    background: #4d4d4d;
+  }
+}
